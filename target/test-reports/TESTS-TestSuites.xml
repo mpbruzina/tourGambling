@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="M-FYT8NM1" id="0" name="CountryTests" package="tourgambling" tests="1" time="0.745" timestamp="2013-07-26T21:30:19">
+      <properties />
+
+      <testcase classname="tourgambling.CountryTests" name="testSomething" time="0.712">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at tourgambling.CountryTests.testSomething(CountryTests.groovy:30)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
