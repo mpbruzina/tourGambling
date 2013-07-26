@@ -9,5 +9,5 @@ class Rider {
     String firstName
     String lastName
     Team team
-    Nationality nationality
+    Country nationality
 }

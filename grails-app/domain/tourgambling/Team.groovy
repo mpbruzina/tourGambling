@@ -7,7 +7,7 @@ class Team {
 
     int teamId
     String name
-    Nationality nationality
+    Country nationality
 //    int stageWins
 //    boolean aggressiveTeam
 }

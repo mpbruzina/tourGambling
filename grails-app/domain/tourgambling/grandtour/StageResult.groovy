@@ -12,4 +12,5 @@ class StageResult {
     Rider rider
     TimeDuration totalTime
     TimeDuration gap
+    int rank
 }
