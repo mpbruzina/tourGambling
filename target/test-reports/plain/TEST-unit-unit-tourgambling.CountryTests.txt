@@ -1,12 +1,12 @@
 Testsuite: tourgambling.CountryTests
-Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.745 sec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.749 sec
 ------------- Standard Error -----------------
 --Output from testSomething--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0.71 sec
+Testcase: testSomething took 0.713 sec
 	FAILED
 junit.framework.AssertionFailedError: Implement me
 junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at tourgambling.CountryTests.testSomething(CountryTests.groovy:30)
+	at tourgambling.CountryTests.testSomething(CountryTests.groovy:50)
 

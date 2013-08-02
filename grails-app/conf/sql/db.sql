@@ -76,6 +76,26 @@ insert into riders (id, firstName, lastName, teamId, cntyId) values (7,'Kanstant
 insert into riders (id, firstName, lastName, teamId, cntyId) values (8,'Ian','Stannard',(select id from teams where name = 'Sky Pro Cycling'),(select id from country where abbr = UPPER('Gbr'));
 insert into riders (id, firstName, lastName, teamId, cntyId) values (9,'Geraint','Thomas',(select id from teams where name = 'Sky Pro Cycling'),(select id from country where abbr = UPPER('Gbr'));
 
+insert into riders (id, firstName, lastName, teamId, cntyId) values (11,'Peter','Sagan',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Svk'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (12,'Maciej','Bodnar',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Pol'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (13,'Alessandro','De Marchi',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Ita'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (14,'Ted','King',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('USA'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (15,'Kristijan','Koren',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Slo'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (16,'Alan','Marangoni',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Ita'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (17,'Moreno','Moser',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Ita'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (18,'Fabio','Sabatini',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Ita'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (19,'Brian','Vandborg',(select id from teams where name = 'Cannondale Pro Cycling'),(select id from country where abbr = UPPER('Den'));
+
+insert into riders (id, firstName, lastName, teamId, cntyId) values (21,'Jurgen','Van den Broeck',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (22,'Lars','Bak',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Den'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (23,'Bart','De Clercq',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (24,'Andre','Greipel',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (25,'Adam','Hansen',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Aus'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (26,'Greg','Henderson',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('NZl'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (27,'Jurgen','Roelandts',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (28,'Marcel','Sieberg',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (29,'Frederik','Willems',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+
 insert into riders (id, firstName, lastName, teamId, cntyId) values (31,'Cadel','Evans',(select id from teams where name = 'BMC Racing Team'),(select id from country where abbr = UPPER('Aus'));
 insert into riders (id, firstName, lastName, teamId, cntyId) values (32,'Brent','Bookwalter',(select id from teams where name = 'BMC Racing Team'),(select id from country where abbr = UPPER('USA'));
 insert into riders (id, firstName, lastName, teamId, cntyId) values (33,'Marcus','Burghardt',(select id from teams where name = 'BMC Racing Team'),(select id from country where abbr = UPPER('Ger'));

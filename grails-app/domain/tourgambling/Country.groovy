@@ -5,8 +5,8 @@ class Country {
     static constraints = {
     }
 
-    int countryId
-    String countryName
-    String countryAbbreviation
-    String flagImageUrl
+    int id
+    String name
+    String abbreviation
+    String flag
 }

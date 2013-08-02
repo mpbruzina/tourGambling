@@ -1,0 +1,88 @@
+[['21','Jurgen','Van den Broeck','Bel'],
+['22','Lars','Bak','Den'],
+['23','Bart','De Clercq','Bel'],
+['24','Andre','Greipel','Ger'],
+['25','Adam','Hansen','Aus'],
+['26','Greg','Henderson','NZl'],
+['27','Jurgen','Roelandts','Bel'],
+['28','Marcel','Sieberg','Ger'],
+['29','Frederik','Willems','Bel']]
+
+
+
+insert into riders (id, firstName, lastName, teamId, cntyId) values (21,'Jurgen','Van den Broeck',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (22,'Lars','Bak',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Den'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (23,'Bart','De Clercq',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (24,'Andre','Greipel',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (25,'Adam','Hansen',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Aus'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (26,'Greg','Henderson',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('NZl'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (27,'Jurgen','Roelandts',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (28,'Marcel','Sieberg',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
+insert into riders (id, firstName, lastName, teamId, cntyId) values (29,'Frederik','Willems',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+
+
+
+
+
+new Country(name:"United States",abbreviation:"USA",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Great Britain",abbreviation:"GBR",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Spain",abbreviation:"ESP",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Italy",abbreviation:"ITA",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Portugal",abbreviation:"POR",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Luxembourg",abbreviation:"LUX",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Switzerland",abbreviation:"SUI",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Germany",abbreviation:"GER",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Netherlands",abbreviation:"NED",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Slovakia",abbreviation:"SVK",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Australia",abbreviation:"AUS",flag:"/img/flags/flag.jpg").save()
+new Country(name:"Austria",abbreviation:"AUT",flag:"/img/flags/flag.jpg").save()
+
+
+
+
+insert into country (version, name, abbreviation, flag) values (0,'United States','USA','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Great Britain','GBR','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Spain','ESP','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Italy','ITA','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Portugal','POR','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Luxembourg','LUX','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Switzerland','SUI','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Germany','GER','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Netherlands','NED','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Slovakia','SVK','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Australia','AUS','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Austria','AUT','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'France','FRA','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Denmark','DEN','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Russia','RUS','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Belgium','BEL','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Kazahkstan','BEL','/img/flags/flag.jpg');
+
+insert into team (version, name, countryId) values (0, 'Saxo-Tinkoff',(select id from country where abbreviation = 'DEN'));
+insert into team (version, name, countryId) values (0, 'AG2R La Mondiale',(select id from country where abbreviation = 'FRA'));
+insert into team (version, name, countryId) values (0, 'Radioshack Leopard',(select id from country where abbreviation = 'LUX'));
+insert into team (version, name, countryId) values (0, 'Movistar',(select id from country where abbreviation = 'ESP'));
+insert into team (version, name, countryId) values (0, 'Belkin Pro Cycling',(select id from country where abbreviation = 'NED'));
+insert into team (version, name, countryId) values (0, 'Katusha',(select id from country where abbreviation = 'RUS'));
+insert into team (version, name, countryId) values (0, 'Euskaltel-Euskadi',(select id from country where abbreviation = 'ESP'));
+insert into team (version, name, countryId) values (0, 'Omega Pharma-Quick Step',(select id from country where abbreviation = 'ESP'));
+insert into team (version, name, countryId) values (0, 'Sky Pro Cycling',(select id from country where abbreviation = 'GBR'));
+insert into team (version, name, countryId) values (0, 'Cofidis-Solutions Credit',(select id from country where abbreviation = 'FRA'));
+insert into team (version, name, countryId) values (0, 'Garmin-Sharp',(select id from country where abbreviation = 'USA'));
+insert into team (version, name, countryId) values (0, 'BMC Racing Team',(select id from country where abbreviation = 'USA'));
+insert into team (version, name, countryId) values (0, 'Europcar',(select id from country where abbreviation = 'FRA'));
+insert into team (version, name, countryId) values (0, 'FDJ',(select id from country where abbreviation = 'FRA'));
+insert into team (version, name, countryId) values (0, 'Sojasun',(select id from country where abbreviation = 'FRA'));
+insert into team (version, name, countryId) values (0, 'Lampre-Merida',(select id from country where abbreviation = 'ITA'));
+insert into team (version, name, countryId) values (0, 'Vacansoleil-DCM',(select id from country where abbreviation = 'BEL'));
+insert into team (version, name, countryId) values (0, 'Astana Pro Team',(select id from country where abbreviation = 'KAZ'));
+insert into team (version, name, countryId) values (0, 'Orica Greenedge',(select id from country where abbreviation = 'AUS'));
+insert into team (version, name, countryId) values (0, 'Lotto-Belisol',(select id from country where abbreviation = 'BEL'));
+insert into team (version, name, countryId) values (0, 'Argos-Shimano',(select id from country where abbreviation = 'NED'));
+insert into team (version, name, countryId) values (0, 'Cannondale Pro Cycling',(select id from country where abbreviation = 'ITA'));
+
+
+
+
+
+new Country(name:"", abbreviation:"", flag:"")

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="M-FYT8NM1" id="0" name="CountryTests" package="tourgambling" tests="1" time="0.745" timestamp="2013-07-26T21:30:19">
+  <testsuite errors="0" failures="1" hostname="M-FYT8NM1" id="0" name="CountryTests" package="tourgambling" tests="1" time="0.749" timestamp="2013-08-02T18:22:39">
       <properties />
 
-      <testcase classname="tourgambling.CountryTests" name="testSomething" time="0.712">
+      <testcase classname="tourgambling.CountryTests" name="testSomething" time="0.715">
           <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
-	at tourgambling.CountryTests.testSomething(CountryTests.groovy:30)
+	at tourgambling.CountryTests.testSomething(CountryTests.groovy:50)
 </failure>
 
       </testcase>

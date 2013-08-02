@@ -11,6 +11,7 @@ class Stage {
     String startLocation
     String endLocation
     float distance
-    TimeDuration winningTime
+    //want to use groovy.time.TimeDuration, but hibernate bitched on startup
+    Date winningTime
     def results = []
 }

@@ -10,7 +10,10 @@ class StageResult {
 
     Stage stage
     Rider rider
-    TimeDuration totalTime
-    TimeDuration gap
+    //want to use groovy.time.TimeDuration, but hibernate bitched on startup
+    //TimeDuration totalTime
+    //TimeDuration gap
+    Date totalTime
+    Date gap
     int rank
 }

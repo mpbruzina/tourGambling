@@ -5,9 +5,9 @@ class Team {
     static constraints = {
     }
 
-    int teamId
+    int id
     String name
-    Country nationality
+    Country country
 //    int stageWins
 //    boolean aggressiveTeam
 }
