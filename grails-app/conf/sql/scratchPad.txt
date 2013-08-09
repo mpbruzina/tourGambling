@@ -1,111 +1,184 @@
-[['21','Jurgen','Van den Broeck','Bel'],
-['22','Lars','Bak','Den'],
-['23','Bart','De Clercq','Bel'],
-['24','Andre','Greipel','Ger'],
-['25','Adam','Hansen','Aus'],
-['26','Greg','Henderson','NZl'],
-['27','Jurgen','Roelandts','Bel'],
-['28','Marcel','Sieberg','Ger'],
-['29','Frederik','Willems','Bel']]
+--[['21','Jurgen','Van den Broeck','Bel'],
+--['22','Lars','Bak','Den'],
+--['23','Bart','De Clercq','Bel'],
+--['24','Andre','Greipel','Ger'],
+--['25','Adam','Hansen','Aus'],
+--['26','Greg','Henderson','NZl'],
+--['27','Jurgen','Roelandts','Bel'],
+--['28','Marcel','Sieberg','Ger'],
+--['29','Frederik','Willems','Bel']]
 
 
 
-insert into riders (id, firstName, lastName, teamId, cntyId) values (21,'Jurgen','Van den Broeck',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (22,'Lars','Bak',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Den'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (23,'Bart','De Clercq',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (24,'Andre','Greipel',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (25,'Adam','Hansen',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Aus'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (26,'Greg','Henderson',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('NZl'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (27,'Jurgen','Roelandts',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (28,'Marcel','Sieberg',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Ger'));
-insert into riders (id, firstName, lastName, teamId, cntyId) values (29,'Frederik','Willems',(select id from teams where name = 'Lotto-Belisol'),(select id from country where abbr = UPPER('Bel'));
+insert into country (version, name, abbreviation, flag) values (0,'United States','USA','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Great Britain','GBR','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Spain','ESP','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Italy','ITA','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Portugal','POR','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Luxembourg','LUX','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Switzerland','SUI','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Germany','GER','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Netherlands','NED','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Slovakia','SVK','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Australia','AUS','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Austria','AUT','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'France','FRA','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Denmark','DEN','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Russia','RUS','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Belgium','BEL','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'Kazahkstan','KAZ','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'New Zealand','NZL','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Poland','POL','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Canada','CAN','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Japan','JPN','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Sweden','SWE','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Brasil','BRA','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Czech Republic','CZE','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Norway','NOR','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Latvia','LAT','/img/flags/flag.jpg');
 
 
 
-
-
-new Country(name:"United States",abbreviation:"USA",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Great Britain",abbreviation:"GBR",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Spain",abbreviation:"ESP",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Italy",abbreviation:"ITA",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Portugal",abbreviation:"POR",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Luxembourg",abbreviation:"LUX",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Switzerland",abbreviation:"SUI",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Germany",abbreviation:"GER",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Netherlands",abbreviation:"NED",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Slovakia",abbreviation:"SVK",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Australia",abbreviation:"AUS",flag:"/img/flags/flag.jpg").save()
-new Country(name:"Austria",abbreviation:"AUT",flag:"/img/flags/flag.jpg").save()
-
-
-
-
-insert into country (version, name, abbreviation, flag) values (0,'United 
-States','USA','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Great Britain','GBR','/img/flags/flag.jpg'); 
-insert into country (version, name, abbreviation, flag) values 
-(0,'Spain','ESP','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Italy','ITA','/img/flags/flag.jpg'); insert into 
-country (version, name, abbreviation, flag) values 
-(0,'Portugal','POR','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Luxembourg','LUX','/img/flags/flag.jpg'); insert 
-into country (version, name, abbreviation, flag) values 
-(0,'Switzerland','SUI','/img/flags/flag.jpg'); insert into country (version, 
-name, abbreviation, flag) values (0,'Germany','GER','/img/flags/flag.jpg'); 
-insert into country (version, name, abbreviation, flag) values 
-(0,'Netherlands','NED','/img/flags/flag.jpg'); insert into country (version, 
-name, abbreviation, flag) values (0,'Slovakia','SVK','/img/flags/flag.jpg'); 
-insert into country (version, name, abbreviation, flag) values 
-(0,'Australia','AUS','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Austria','AUT','/img/flags/flag.jpg'); insert 
-into country (version, name, abbreviation, flag) values 
-(0,'France','FRA','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Denmark','DEN','/img/flags/flag.jpg'); insert 
-into country (version, name, abbreviation, flag) values 
-(0,'Russia','RUS','/img/flags/flag.jpg'); insert into country (version, name, 
-abbreviation, flag) values (0,'Belgium','BEL','/img/flags/flag.jpg'); insert 
-into country (version, name, abbreviation, flag) values 
-(0,'Kazahkstan','KAZ','/img/flags/flag.jpg');
-
-insert into team (version, name, country_id) values (0, 'Saxo-Tinkoff',(select 
-id from country where abbreviation = 'DEN')); insert into team (version, name, 
-country_id) values (0, 'AG2R La Mondiale',(select id from country where 
-abbreviation = 'FRA')); insert into team (version, name, country_id) values (0, 
-'Radioshack Leopard',(select id from country where abbreviation = 'LUX')); 
-insert into team (version, name, country_id) values (0, 'Movistar',(select id 
-from country where abbreviation = 'ESP')); insert into team (version, name, 
-country_id) values (0, 'Belkin Pro Cycling',(select id from country where 
-abbreviation = 'NED')); insert into team (version, name, country_id) values (0, 
-'Katusha',(select id from country where abbreviation = 'RUS')); insert into team 
-(version, name, country_id) values (0, 'Euskaltel-Euskadi',(select id from 
-country where abbreviation = 'ESP')); insert into team (version, name, 
-country_id) values (0, 'Omega Pharma-Quick Step',(select id from country where 
-abbreviation = 'ESP')); insert into team (version, name, country_id) values (0, 
-'Sky Pro Cycling',(select id from country where abbreviation = 'GBR')); insert 
-into team (version, name, country_id) values (0, 'Cofidis-Solutions 
-Credit',(select id from country where abbreviation = 'FRA')); insert into team 
-(version, name, country_id) values (0, 'Garmin-Sharp',(select id from country 
-where abbreviation = 'USA')); insert into team (version, name, country_id) 
-values (0, 'BMC Racing Team',(select id from country where abbreviation = 
-'USA')); insert into team (version, name, country_id) values (0, 
-'Europcar',(select id from country where abbreviation = 'FRA')); insert into 
-team (version, name, country_id) values (0, 'FDJ',(select id from country where 
-abbreviation = 'FRA')); insert into team (version, name, country_id) values (0, 
-'Sojasun',(select id from country where abbreviation = 'FRA')); insert into team 
-(version, name, country_id) values (0, 'Lampre-Merida',(select id from country 
-where abbreviation = 'ITA')); insert into team (version, name, country_id) 
-values (0, 'Vacansoleil-DCM',(select id from country where abbreviation = 
-'BEL')); insert into team (version, name, country_id) values (0, 'Astana Pro 
-Team',(select id from country where abbreviation = 'KAZ')); insert into team 
-(version, name, country_id) values (0, 'Orica Greenedge',(select id from country 
-where abbreviation = 'AUS')); insert into team (version, name, country_id) 
-values (0, 'Lotto-Belisol',(select id from country where abbreviation = 'BEL')); 
-insert into team (version, name, country_id) values (0, 'Argos-Shimano',(select 
-id from country where abbreviation = 'NED'));
+insert into team (version, name, country_id) values (0, 'Saxo-Tinkoff',(select id from country where abbreviation = 'DEN')); 
+insert into team (version, name, country_id) values (0, 'AG2R La Mondiale',(select id from country where abbreviation = 'FRA')); 
+insert into team (version, name, country_id) values (0, 'Radioshack Leopard',(select id from country where abbreviation = 'LUX')); 
+insert into team (version, name, country_id) values (0, 'Movistar',(select id from country where abbreviation = 'ESP')); 
+insert into team (version, name, country_id) values (0, 'Belkin Pro Cycling',(select id from country where abbreviation = 'NED')); 
+insert into team (version, name, country_id) values (0, 'Katusha',(select id from country where abbreviation = 'RUS')); 
+insert into team (version, name, country_id) values (0, 'Euskaltel-Euskadi',(select id from country where abbreviation = 'ESP')); 
+insert into team (version, name, country_id) values (0, 'Omega Pharma-Quick Step',(select id from country where abbreviation = 'ESP')); 
+insert into team (version, name, country_id) values (0, 'Sky Pro Cycling',(select id from country where abbreviation = 'GBR')); 
+insert into team (version, name, country_id) values (0, 'Cofidis-Solutions Credit',(select id from country where abbreviation = 'FRA')); 
+insert into team (version, name, country_id) values (0, 'Garmin-Sharp',(select id from country where abbreviation = 'USA')); 
+insert into team (version, name, country_id) values (0, 'BMC Racing Team',(select id from country where abbreviation = 'USA')); 
+insert into team (version, name, country_id) values (0, 'Europcar',(select id from country where abbreviation = 'FRA')); 
+insert into team (version, name, country_id) values (0, 'FDJ',(select id from country where abbreviation = 'FRA')); 
+insert into team (version, name, country_id) values (0, 'Sojasun',(select id from country where abbreviation = 'FRA')); 
+insert into team (version, name, country_id) values (0, 'Lampre-Merida',(select id from country where abbreviation = 'ITA')); 
+insert into team (version, name, country_id) values (0, 'Vacansoleil-DCM',(select id from country where abbreviation = 'BEL')); 
+insert into team (version, name, country_id) values (0, 'Astana Pro Team',(select id from country where abbreviation = 'KAZ')); 
+insert into team (version, name, country_id) values (0, 'Orica Greenedge',(select id from country where abbreviation = 'AUS')); 
+insert into team (version, name, country_id) values (0, 'Lotto-Belisol',(select id from country where abbreviation = 'BEL')); 
+insert into team (version, name, country_id) values (0, 'Argos-Shimano',(select id from country where abbreviation = 'NED'));
 insert into team (version, name, country_id) values (0, 'Cannondale Pro Cycling',(select id from country where abbreviation = 'ITA'));
 
 
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (1, 0,'Chris','Froome',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('GBr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (2, 0,'Edvald','Boasson Hagen',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('Nor')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (3, 0,'Peter','Kennaugh',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('GBr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (4, 0,'Vasil','Kiryienka',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('Blr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (5, 0,'David','Lopez',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (6, 0,'Richie','Porte',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('Aus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (7, 0,'Kanstantsin','Siutsou',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('Blr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (8, 0,'Ian','Stannard',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('GBr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (9, 0,'Geraint','Thomas',(select id from team where name = 'Sky Pro Cycling'),(select id from country where abbreviation = UPPER('GBr')));
 
 
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (11, 0,'Peter','Sagan',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Svk')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (12, 0,'Maciej','Bodnar',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Pol')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (13, 0,'Alessandro','De Marchi',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (14, 0,'Ted','King',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('USA')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (15, 0,'Kristijan','Koren',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Svk')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (16, 0,'Alan','Marangoni',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (17, 0,'Moreno','Moser',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (18, 0,'Fabio','Sabatini',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (19, 0,'Brian','Vandborg',(select id from team where name = 'Cannondale Pro Cycling'),(select id from country where abbreviation = UPPER('Den')));
 
-new Country(name:"", abbreviation:"", flag:"")
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (21, 0, 'Jurgen','Van den Broeck',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (22, 0, 'Lars','Bak',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Den')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (23, 0, 'Bart','De Clercq',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (24, 0, 'Andre','Greipel',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Ger')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (25, 0, 'Adam','Hansen',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Aus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (26, 0, 'Greg','Henderson',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('NZl')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (27, 0, 'Jurgen','Roelandts',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (28, 0, 'Marcel','Sieberg',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Ger')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (29, 0, 'Frederik','Willems',(select id from team where name = 'Lotto-Belisol'),(select id from country where abbreviation = UPPER('Bel')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (31, 0,'Cadel','Evans',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Aus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (32, 0,'Brent','Bookwalter',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('USA')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (33, 0,'Marcus','Burghardt',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Ger')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (34, 0,'Philippe','Gilbert',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (35, 0,'Amael','Moinard',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (36, 0,'Steve','Morabito',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Sui')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (37, 0,'Manuel','Quinziato',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (38, 0,'Michael','Schar',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('Sui')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (39, 0,'Tejay','van Garderen',(select id from team where name = 'BMC Racing Team'),(select id from country where abbreviation = UPPER('USA')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (41, 0,'Andy','Schleck',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Lux')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (42, 0,'Jan','Bakelants',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (43, 0,'Laurent','Didier',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Lux')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (44, 0,'Tony','Gallopin',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (45, 0,'Markel','Irizar',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (46, 0,'Andreas','Kloden',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Ger')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (47, 0,'Maxime','Monfort',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Bel')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (48, 0,'Jens','Voigt',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Ger')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (49, 0,'Haimar','Zubeldia',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Spa')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (51, 0,'Pierre','Rolland',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (52, 0,'Yukiya','Arashiro',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Jpn')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (53, 0,'Jerome','Cousin',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (54, 0,'Cyril','Gautier',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (55, 0,'Yohann','Gene',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (56, 0,'Davide','Malacarne',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (57, 0,'Kevin','Reza',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (58, 0,'David','Veilleux',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Can')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (59, 0,'Thomas','Voeckler',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (61, 0,'Janez','Brajkovic',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Svk')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (62, 0,'Assan','Bazayev',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Kaz')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (63, 0,'Jakob','Fuglsang',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Den')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (64, 0,'Enrico','Gasparotto',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (65, 0,'Francesco','Gavazzi',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (66, 0,'Andrey','Kashechkin',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Kaz')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (67, 0,'Fredrik','Kessiakoff',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Swe')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (68, 0,'Alexey','Lutsenko',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Kaz')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (69, 0,'Dmitri','Muravyev',(select id from team where name = 'Astana Pro Team'),(select id from country where abbreviation = UPPER('Kaz')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (71, 0,'Thibaut','Pinot',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (72, 0,'William','Bonnet',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (73, 0,'Nacer','Bouhanni',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (74, 0,'Pierrick','Fedrigo',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (75, 0,'Murilo','Fischer',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Bra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (76, 0,'Alexandre','Geniez',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (77, 0,'Arnold','Jeannesson',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (78, 0,'Jeremy','Roy',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (79, 0,'Arthur','Vichot',(select id from team where name = 'FDJ'),(select id from country where abbreviation = UPPER('Fra')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (81, 0,'Jean-Christophe','Peraud',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (82, 0,'Romain','Bardet',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (83, 0,'Maxime','Bouet',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (84, 0,'Samuel','Dumoulin',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (85, 0,'Hubert','Dupont',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (86, 0,'John','Gadret',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (87, 0,'Blel','Kadri',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (88, 0,'Sebastien','Minard',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (89, 0,'Christophe','Riblon',(select id from team where name = 'AG2R La Mondiale'),(select id from country where abbreviation = UPPER('Fra')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (91, 0,'Alberto','Contador',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (92, 0,'Daniele','Bennati',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Ita')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (93, 0,'Jesus','Hernandez',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (94, 0,'Roman','Kreuziger',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Cze')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (95, 0,'Benjamin','Noval',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (96, 0,'Sergio','Paulinho',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Por')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (97, 0,'Nicolas','Roche',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Irl')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (98, 0,'Michael','Rogers',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Aus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (99, 0,'Matteo','Tosatto',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('Ita')));
+
+
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (101, 0,'Joaquim','Rodriguez',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (102, 0,'Pavel','Brutt',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Rus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (103, 0,'Alexander','Kristoff',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Nor')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (104, 0,'Aliaksandr','Kuchynski',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Blr')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (105, 0,'Alberto','Losada',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (106, 0,'Daniel','Moreno',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Esp')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (107, 0,'Gatis','Smukulis',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Lat')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (108, 0,'Yuriy','Trofimov',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Rus')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (109, 0,'Eduard','Vorganov',(select id from team where name = 'Katusha'),(select id from country where abbreviation = UPPER('Rus')));
