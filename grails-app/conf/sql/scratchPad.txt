@@ -36,6 +36,8 @@ insert into country (version, name, abbreviation, flag) values (0,'Brasil','BRA'
 insert into country (version, name, abbreviation, flag) values (0,'Czech Republic','CZE','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Norway','NOR','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Latvia','LAT','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Belarus','BLR','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Ireland','IRL','/img/flags/flag.jpg');
 
 
 
@@ -115,7 +117,7 @@ insert into rider (bib_number, version, first_name, last_name, team_id, national
 insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (46, 0,'Andreas','Kloden',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Ger')));
 insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (47, 0,'Maxime','Monfort',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Bel')));
 insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (48, 0,'Jens','Voigt',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Ger')));
-insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (49, 0,'Haimar','Zubeldia',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Spa')));
+insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (49, 0,'Haimar','Zubeldia',(select id from team where name = 'Radioshack Leopard'),(select id from country where abbreviation = UPPER('Esp')));
 
 
 insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (51, 0,'Pierre','Rolland',(select id from team where name = 'Europcar'),(select id from country where abbreviation = UPPER('Fra')));
