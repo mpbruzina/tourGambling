@@ -126,6 +126,14 @@ class CountryTests {
 //                ['109','Eduard','Vorganov','Rus']]
 
 
+
+//        def someFile = new File("D:\\IProjects\\tourGambling\\grails-app\\conf\\sql\\rawRiderList.txt").text;
+//        println "this many lines ${someFile.readLines().size()}"
+
+        new File("D:\\IProjects\\tourGambling\\grails-app\\conf\\sql\\rawRiderList.txt").text.eachLine{ line ->
+            println "here is a line ${line}"
+        }
+
         riders.each { rider ->
             println "insert into rider (bib_number, version, first_name, last_name, team_id, nationality_id) values (${rider[0]}, 0,'${rider[1]}','${rider[2]}',(select id from team where name = 'Saxo-Tinkoff'),(select id from country where abbreviation = UPPER('${rider[3]}')));"
         }
