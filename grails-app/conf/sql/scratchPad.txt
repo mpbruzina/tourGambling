@@ -1,16 +1,4 @@
---[['21','Jurgen','Van den Broeck','Bel'],
---['22','Lars','Bak','Den'],
---['23','Bart','De Clercq','Bel'],
---['24','Andre','Greipel','Ger'],
---['25','Adam','Hansen','Aus'],
---['26','Greg','Henderson','NZl'],
---['27','Jurgen','Roelandts','Bel'],
---['28','Marcel','Sieberg','Ger'],
---['29','Frederik','Willems','Bel']]
-
-
-
-insert into country (version, name, abbreviation, flag) values (0,'United States','USA','/img/flags/flag.jpg'); 
+insert into country (version, name, abbreviation, flag) values (0,'United States','USA','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Great Britain','GBR','/img/flags/flag.jpg'); 
 insert into country (version, name, abbreviation, flag) values (0,'Spain','ESP','/img/flags/flag.jpg'); 
 insert into country (version, name, abbreviation, flag) values (0,'Italy','ITA','/img/flags/flag.jpg'); 
@@ -30,7 +18,7 @@ insert into country (version, name, abbreviation, flag) values (0,'Kazahkstan','
 insert into country (version, name, abbreviation, flag) values (0,'New Zealand','NZL','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Poland','POL','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Canada','CAN','/img/flags/flag.jpg');
-insert into country (version, name, abbreviation, flag) values (0,'Japan','JPN','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Japan','JAP','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Sweden','SWE','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Brasil','BRA','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Czech Republic','CZE','/img/flags/flag.jpg');
@@ -38,6 +26,12 @@ insert into country (version, name, abbreviation, flag) values (0,'Norway','NOR'
 insert into country (version, name, abbreviation, flag) values (0,'Latvia','LAT','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Belarus','BLR','/img/flags/flag.jpg');
 insert into country (version, name, abbreviation, flag) values (0,'Ireland','IRL','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Estonia','EST','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Lithuania','LTU','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'South Africa','RSA','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Uzbekistan','UZB','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Colombia','COL','/img/flags/flag.jpg');
+insert into country (version, name, abbreviation, flag) values (0,'Costa Rica','CRC','/img/flags/flag.jpg');
 
 
 

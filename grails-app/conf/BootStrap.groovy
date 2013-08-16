@@ -8,8 +8,6 @@ class BootStrap {
     def init = { servletContext ->
         def sql = new Sql(dataSource)
 
-
-
         //this works (as it should) using GORM...adds the ID and Version implicitly
 //        new Country(name:"United States",abbreviation:"USA",flag:"/img/flags/flag.jpg").save()
 //        new Country(name:"Great Britain",abbreviation:"GBR",flag:"/img/flags/flag.jpg").save()
@@ -25,10 +23,7 @@ class BootStrap {
 //        new Country(name:"Austria",abbreviation:"AUT",flag:"/img/flags/flag.jpg").save()
 //
 //        sql.executeInsert("""insert into country (version, name, abbreviation, flag) values (0, 'CrapData','CRP','flag.jpg')""")
-
-
-
-
+//
 //        insert into country (id, name, abbr, flagImgUrl) values (id , 'Portugal','POR','/img/flags/flag.jpg');
 //        insert into country (id, name, abbr, flagImgUrl) values (id , 'Luxembourg','LUX','/img/flags/flag.jpg');
 //        insert into country (id, name, abbr, flagImgUrl) values (id , 'Switzerland','SUI','/img/flags/flag.jpg');
